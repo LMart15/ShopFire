@@ -1,0 +1,6 @@
+framework module Pods_MAPD124_W2017_MIDTERM {
+  umbrella header "Pods-MAPD124-W2017-MIDTERM-umbrella.h"
+
+  export *
+  module * { export * }
+}

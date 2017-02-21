@@ -12,9 +12,12 @@
 		557CF4DB1E5D0956005DAB87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557CF4D91E5D0956005DAB87 /* Main.storyboard */; };
 		557CF4DD1E5D0956005DAB87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557CF4DC1E5D0956005DAB87 /* Assets.xcassets */; };
 		557CF4E01E5D0956005DAB87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557CF4DE1E5D0956005DAB87 /* LaunchScreen.storyboard */; };
+		557CF4E81E5D0A1D005DAB87 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 557CF4E71E5D0A1D005DAB87 /* GoogleService-Info.plist */; };
+		D2CB841957C4F7884C4E2AE4 /* Pods_MAPD124_W2017_MIDTERM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC9682816D8650BAB60B803 /* Pods_MAPD124_W2017_MIDTERM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B9F22BACDC50CC5BC4CFEA3 /* Pods-MAPD124-W2017-MIDTERM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAPD124-W2017-MIDTERM.release.xcconfig"; path = "Pods/Target Support Files/Pods-MAPD124-W2017-MIDTERM/Pods-MAPD124-W2017-MIDTERM.release.xcconfig"; sourceTree = "<group>"; };
 		557CF4D21E5D0956005DAB87 /* MAPD124-W2017-MIDTERM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD124-W2017-MIDTERM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		557CF4D51E5D0956005DAB87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		557CF4D71E5D0956005DAB87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		557CF4DC1E5D0956005DAB87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		557CF4DF1E5D0956005DAB87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		557CF4E11E5D0956005DAB87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		557CF4E71E5D0A1D005DAB87 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CCC9682816D8650BAB60B803 /* Pods_MAPD124_W2017_MIDTERM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAPD124_W2017_MIDTERM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB7922C682A02221E2B805A6 /* Pods-MAPD124-W2017-MIDTERM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAPD124-W2017-MIDTERM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MAPD124-W2017-MIDTERM/Pods-MAPD124-W2017-MIDTERM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CB841957C4F7884C4E2AE4 /* Pods_MAPD124_W2017_MIDTERM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				557CF4D41E5D0956005DAB87 /* MAPD124-W2017-MIDTERM */,
 				557CF4D31E5D0956005DAB87 /* Products */,
+				73689C05E8C1A8C4F98134E0 /* Pods */,
+				AC89BAFFE51D9C49F5B5B859 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				557CF4DC1E5D0956005DAB87 /* Assets.xcassets */,
 				557CF4DE1E5D0956005DAB87 /* LaunchScreen.storyboard */,
 				557CF4E11E5D0956005DAB87 /* Info.plist */,
+				557CF4E71E5D0A1D005DAB87 /* GoogleService-Info.plist */,
 			);
 			path = "MAPD124-W2017-MIDTERM";
+			sourceTree = "<group>";
+		};
+		73689C05E8C1A8C4F98134E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB7922C682A02221E2B805A6 /* Pods-MAPD124-W2017-MIDTERM.debug.xcconfig */,
+				2B9F22BACDC50CC5BC4CFEA3 /* Pods-MAPD124-W2017-MIDTERM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AC89BAFFE51D9C49F5B5B859 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCC9682816D8650BAB60B803 /* Pods_MAPD124_W2017_MIDTERM.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 557CF4E41E5D0956005DAB87 /* Build configuration list for PBXNativeTarget "MAPD124-W2017-MIDTERM" */;
 			buildPhases = (
+				477B2F5A565D22C42FA266EE /* [CP] Check Pods Manifest.lock */,
 				557CF4CE1E5D0956005DAB87 /* Sources */,
 				557CF4CF1E5D0956005DAB87 /* Frameworks */,
 				557CF4D01E5D0956005DAB87 /* Resources */,
+				1C8B5C8EC75862B319F3BFB6 /* [CP] Embed Pods Frameworks */,
+				427C9BE37795FBFF4D3D6F41 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				557CF4E01E5D0956005DAB87 /* LaunchScreen.storyboard in Resources */,
+				557CF4E81E5D0A1D005DAB87 /* GoogleService-Info.plist in Resources */,
 				557CF4DD1E5D0956005DAB87 /* Assets.xcassets in Resources */,
 				557CF4DB1E5D0956005DAB87 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C8B5C8EC75862B319F3BFB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MAPD124-W2017-MIDTERM/Pods-MAPD124-W2017-MIDTERM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		427C9BE37795FBFF4D3D6F41 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MAPD124-W2017-MIDTERM/Pods-MAPD124-W2017-MIDTERM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		477B2F5A565D22C42FA266EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		557CF4CE1E5D0956005DAB87 /* Sources */ = {
@@ -259,6 +338,7 @@
 		};
 		557CF4E51E5D0956005DAB87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB7922C682A02221E2B805A6 /* Pods-MAPD124-W2017-MIDTERM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2BULHRS882;
@@ -272,6 +352,7 @@
 		};
 		557CF4E61E5D0956005DAB87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B9F22BACDC50CC5BC4CFEA3 /* Pods-MAPD124-W2017-MIDTERM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2BULHRS882;
