@@ -100,7 +100,7 @@ class ShoppingListViewController: UIViewController, UITableViewDataSource {
         selectedItem = self.shoppingList[indexPath.row]
         iQuantity = Int(selectedItem.itemQuantity!)!
         
-        dbRef.child(selectedItem.key).updateChildValues(["itemQuantity" : String(iQuantity)])
+        dbRef.child(selectedItem.key).updateChildValues(["itemQuantity" : String(Int(sender.value))])
         
     }
 
