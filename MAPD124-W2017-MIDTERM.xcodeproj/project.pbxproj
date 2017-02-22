@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		557CF4D61E5D0956005DAB87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CF4D51E5D0956005DAB87 /* AppDelegate.swift */; };
-		557CF4D81E5D0956005DAB87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CF4D71E5D0956005DAB87 /* ViewController.swift */; };
 		557CF4DB1E5D0956005DAB87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557CF4D91E5D0956005DAB87 /* Main.storyboard */; };
 		557CF4DD1E5D0956005DAB87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557CF4DC1E5D0956005DAB87 /* Assets.xcassets */; };
 		557CF4E01E5D0956005DAB87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557CF4DE1E5D0956005DAB87 /* LaunchScreen.storyboard */; };
 		557CF4E81E5D0A1D005DAB87 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 557CF4E71E5D0A1D005DAB87 /* GoogleService-Info.plist */; };
+		557CF4EA1E5D0CBA005DAB87 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CF4E91E5D0CBA005DAB87 /* ShoppingItem.swift */; };
+		557CF4EC1E5D0CDF005DAB87 /* ShoppingItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CF4EB1E5D0CDF005DAB87 /* ShoppingItemCell.swift */; };
+		557CF4EF1E5D0D43005DAB87 /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557CF4EE1E5D0D43005DAB87 /* ShoppingListViewController.swift */; };
 		D2CB841957C4F7884C4E2AE4 /* Pods_MAPD124_W2017_MIDTERM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC9682816D8650BAB60B803 /* Pods_MAPD124_W2017_MIDTERM.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,12 +22,14 @@
 		2B9F22BACDC50CC5BC4CFEA3 /* Pods-MAPD124-W2017-MIDTERM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAPD124-W2017-MIDTERM.release.xcconfig"; path = "Pods/Target Support Files/Pods-MAPD124-W2017-MIDTERM/Pods-MAPD124-W2017-MIDTERM.release.xcconfig"; sourceTree = "<group>"; };
 		557CF4D21E5D0956005DAB87 /* MAPD124-W2017-MIDTERM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD124-W2017-MIDTERM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		557CF4D51E5D0956005DAB87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		557CF4D71E5D0956005DAB87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		557CF4DA1E5D0956005DAB87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		557CF4DC1E5D0956005DAB87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		557CF4DF1E5D0956005DAB87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		557CF4E11E5D0956005DAB87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		557CF4E71E5D0A1D005DAB87 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		557CF4E91E5D0CBA005DAB87 /* ShoppingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
+		557CF4EB1E5D0CDF005DAB87 /* ShoppingItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingItemCell.swift; sourceTree = "<group>"; };
+		557CF4EE1E5D0D43005DAB87 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
 		CCC9682816D8650BAB60B803 /* Pods_MAPD124_W2017_MIDTERM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MAPD124_W2017_MIDTERM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7922C682A02221E2B805A6 /* Pods-MAPD124-W2017-MIDTERM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAPD124-W2017-MIDTERM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MAPD124-W2017-MIDTERM/Pods-MAPD124-W2017-MIDTERM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,14 +68,24 @@
 			isa = PBXGroup;
 			children = (
 				557CF4D51E5D0956005DAB87 /* AppDelegate.swift */,
-				557CF4D71E5D0956005DAB87 /* ViewController.swift */,
 				557CF4D91E5D0956005DAB87 /* Main.storyboard */,
+				557CF4EE1E5D0D43005DAB87 /* ShoppingListViewController.swift */,
 				557CF4DC1E5D0956005DAB87 /* Assets.xcassets */,
 				557CF4DE1E5D0956005DAB87 /* LaunchScreen.storyboard */,
 				557CF4E11E5D0956005DAB87 /* Info.plist */,
 				557CF4E71E5D0A1D005DAB87 /* GoogleService-Info.plist */,
+				557CF4ED1E5D0CE6005DAB87 /* model */,
 			);
 			path = "MAPD124-W2017-MIDTERM";
+			sourceTree = "<group>";
+		};
+		557CF4ED1E5D0CE6005DAB87 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				557CF4E91E5D0CBA005DAB87 /* ShoppingItem.swift */,
+				557CF4EB1E5D0CDF005DAB87 /* ShoppingItemCell.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 		73689C05E8C1A8C4F98134E0 /* Pods */ = {
@@ -216,7 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				557CF4D81E5D0956005DAB87 /* ViewController.swift in Sources */,
+				557CF4EF1E5D0D43005DAB87 /* ShoppingListViewController.swift in Sources */,
+				557CF4EC1E5D0CDF005DAB87 /* ShoppingItemCell.swift in Sources */,
+				557CF4EA1E5D0CBA005DAB87 /* ShoppingItem.swift in Sources */,
 				557CF4D61E5D0956005DAB87 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +399,7 @@
 				557CF4E61E5D0956005DAB87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
