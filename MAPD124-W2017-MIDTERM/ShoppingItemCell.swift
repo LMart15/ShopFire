@@ -1,19 +1,22 @@
 /*:
  
- - File Name:
- TaskCell.swift
+ - File itemName:
+ ShoppingItemCell.swift
  
  - Author:
  Lawrence Martin
  
- - App Name:
- TaskFire
+ - App itemName:
+ ShopFire
  
  - Student ID:
  300782358
  
  - File Description:
- Custom cell for tasks
+ Shopping Item Cell model
+ 
+ - Date
+ Feb 21, 2017
  
  */
 
@@ -23,7 +26,6 @@ import UIKit
 class ShoppingItemCell: UITableViewCell {
     
     // Custom Task cell consists of Name, Note labels and Completed status switch
-    
     @IBOutlet weak var itemName_lbl: UILabel!
     @IBOutlet weak var itemQuantity_lbl: UILabel!
  

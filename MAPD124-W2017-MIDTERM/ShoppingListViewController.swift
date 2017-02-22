@@ -1,10 +1,24 @@
-//
-//  ShoppingListViewController.swift
-//  MAPD124-W2017-MIDTERM
-//
-//  Created by Lawrence Martin on 2017-02-21.
-//  Copyright © 2017 mapd.centennial. All rights reserved.
-//
+/*:
+ 
+ - File itemName:
+ ShoppingListViewController.swift
+ 
+ - Author:
+ Lawrence Martin
+ 
+ - App itemName:
+ ShopFire
+ 
+ - Student ID:
+ 300782358
+ 
+ - File Description:
+ Shopping List View Controller
+ 
+ - Date
+ Feb 21, 2017
+ 
+ */
 
 import UIKit
 import FirebaseDatabase
@@ -20,18 +34,11 @@ class ShoppingListViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var newItemName_tv: UITextField!
     @IBOutlet weak var newItemQuantity_tv: UITextField!
     
-    let shoppingItem1 = ShoppingItem(itemName: "Milk", itemQuantity: "1")
-    let shoppingItem2 = ShoppingItem(itemName: "Cookies", itemQuantity: "2")
-    let shoppingItem3 = ShoppingItem(itemName: "Water", itemQuantity: "3")
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
         dbRef = FIRDatabase.database().reference().child("Shopping List")
         self.startObservingDB()
-        
-//        let shopRef = self.dbRef.childByAutoId()
-//        shopRef.setValue(shoppingItem3.toDictionary())
         
     }
     
@@ -80,10 +87,9 @@ class ShoppingListViewController: UIViewController, UITableViewDataSource {
         }
     }
 
+    ///Adjust Quantity value with stepper
     @IBAction func adjustQuantity(_ sender: UIStepper) {
-        
-        print("stepper value")
-        
+    
         var selectedItem:ShoppingItem
         var iQuantity:Int
         
@@ -94,12 +100,11 @@ class ShoppingListViewController: UIViewController, UITableViewDataSource {
         selectedItem = self.shoppingList[indexPath.row]
         iQuantity = Int(selectedItem.itemQuantity!)!
         
-        var newQuantity = Int(sender.value) + iQuantity
-        
-        dbRef.child(selectedItem.key).updateChildValues(["itemQuantity" : String(newQuantity)])
+        dbRef.child(selectedItem.key).updateChildValues(["itemQuantity" : String(iQuantity)])
         
     }
 
+    ///Add item to list and storage
     @IBAction func addItem(_ sender: UIButton) {
         
         if newItemName_tv.text!.isEmpty || newItemQuantity_tv.text!.isEmpty {
@@ -114,6 +119,10 @@ class ShoppingListViewController: UIViewController, UITableViewDataSource {
             shoppingItemRef.setValue(shoppingItem.toDictionary())
             
         }
+        
+    }
+    
+    @IBAction func cancelAdd(_ sender: UIBarButtonItem) {
         
     }
     

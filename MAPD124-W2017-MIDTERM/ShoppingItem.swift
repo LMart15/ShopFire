@@ -15,6 +15,9 @@
  - File Description:
  Shopping Item model
  
+ - Date
+ Feb 21, 2017
+ 
  */
 
 
