@@ -28,9 +28,9 @@ class ShoppingItem: NSObject {
     let itemRef:FIRDatabaseReference?
     
     var itemName: String?
-    var itemQuantity:Int?
+    var itemQuantity:String?
      
-    init(key:String = "", itemName:String, itemQuantity: Int) {
+    init(key:String = "", itemName:String, itemQuantity: String) {
         
         self.itemRef = nil
         self.key = key
@@ -47,13 +47,13 @@ class ShoppingItem: NSObject {
         let snapshotValue = snapshot.value as? NSDictionary
         
         itemName = snapshotValue?["itemName"] as? String
-        itemQuantity = snapshotValue?["itemQuantity"] as? Int
+        itemQuantity = snapshotValue?["itemQuantity"] as? String
     }
     
     ///Convert all fields to string for easy storage in Firebase
     func toDictionary() -> [String:String] {
         
-        return ["itemName":itemName!, "itemQuantity": String(describing: itemQuantity)]
+        return ["itemName":itemName!, "itemQuantity": itemQuantity!]
     }
     
 }
