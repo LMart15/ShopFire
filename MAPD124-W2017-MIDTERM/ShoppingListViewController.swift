@@ -105,7 +105,7 @@ class ShoppingListViewController: UIViewController, UITableViewDataSource {
     }
 
     ///Add item to list and storage
-    @IBAction func addItem(_ sender: UIButton) {
+    @IBAction func saveItem(_ sender: UIBarButtonItem) {
         
         if newItemName_tv.text!.isEmpty || newItemQuantity_tv.text!.isEmpty {
             
@@ -123,7 +123,7 @@ class ShoppingListViewController: UIViewController, UITableViewDataSource {
     }
     
     @IBAction func cancelAdd(_ sender: UIBarButtonItem) {
-        
+        self.tableView.reloadData()
     }
     
     ///Show alert if required fields are empty on save
